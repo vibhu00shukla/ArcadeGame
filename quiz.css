@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px; /* Add some margin to push the main content below the header */
+    width: 100%;
+    max-width: 600px;
+}
+
+#quiz-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Increased padding for more space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width of parent container */
+    max-width: 700px; /* Adjusted max-width for larger container */
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; /* Increased gap between buttons */
+    width: 100%;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px; /* Increased padding for larger buttons */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Slightly larger font size */
+    transition: background-color 0.3s ease;
+}
+
+.btn.correct {
+    background-color: #28a745; /* Green color for correct answer */
+}
+
+.btn.wrong {
+    background-color: #dc3545; /* Red color for wrong answer */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+#score-container {
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 2.5em; /* Increased font size for score */
+    font-weight: bold;
+    color: #28a745; /* Green color for score */
+}
